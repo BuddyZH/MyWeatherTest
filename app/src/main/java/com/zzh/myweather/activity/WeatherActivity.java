@@ -48,8 +48,8 @@ public class WeatherActivity extends Activity implements View.OnClickListener{
     private TextView currentDateText;
 
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.weather_layout);
         weatherInfoLayout = (LinearLayout) findViewById(R.id.weather_info_layout);
