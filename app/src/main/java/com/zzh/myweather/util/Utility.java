@@ -95,14 +95,14 @@ public class Utility {
     public static void handleWeatherResponse(Context context, String response) {
         try {
             JSONObject jsonObject = new JSONObject(response);
-            /*JSONObject weatherInfo = jsonObject.getJSONObject("weatherinfo");
+            JSONObject weatherInfo = jsonObject.getJSONObject("weatherinfo");
 			String cityName = weatherInfo.getString("city");
 			String weatherCode = weatherInfo.getString("cityid");
 			String temp1 = weatherInfo.getString("temp1");
 			String temp2 = weatherInfo.getString("temp2");
 			String weatherDesp = weatherInfo.getString("weather");
-			String publishTime = weatherInfo.getString("ptime");*/
-            JSONObject weatherInfo = jsonObject.getJSONObject("result");
+			String publishTime = weatherInfo.getString("ptime");
+            /*JSONObject weatherInfo = jsonObject.getJSONObject("result");
             JSONObject weatherInfoFromSk = weatherInfo.getJSONObject("sk");
             JSONObject weatherInfoFromToday = weatherInfo.getJSONObject("today");
             String cityName = weatherInfoFromToday.getString("city");
@@ -110,7 +110,7 @@ public class Utility {
             String temp2 = null;
             String weatherCode = null;
             String weatherDesp = weatherInfoFromToday.getString("weather");
-            String publishTime = weatherInfoFromSk.getString("time");
+            String publishTime = weatherInfoFromSk.getString("time");*/
             saveWeatherInfo(context, cityName, weatherCode, temp1, temp2,
                     weatherDesp, publishTime);
         } catch (JSONException e) {
