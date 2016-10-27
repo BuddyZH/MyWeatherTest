@@ -1,14 +1,12 @@
 package com.zzh.myweather.util;
 
-import java.io.BufferedInputStream;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ResourceBundle;
 
-import javax.net.ssl.HttpsURLConnection;
 
 /**
  * Created by ZZH on 2016/10/23.

@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.view.View;
@@ -14,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.zzh.myweather.R;
+import com.zzh.myweather.service.AutoUpdateService;
 import com.zzh.myweather.util.HttpCallbackListener;
 import com.zzh.myweather.util.HttpUtil;
 import com.zzh.myweather.util.Utility;
@@ -176,6 +176,8 @@ public class WeatherActivity extends Activity implements View.OnClickListener{
         currentDateText.setText(preferences.getString("current_date", ""));
         weatherInfoLayout.setVisibility(View.VISIBLE);
         cityNameText.setVisibility(View.VISIBLE);
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
 
 
