@@ -25,7 +25,7 @@ public class WeatherActivity extends Activity implements View.OnClickListener{
 
     private LinearLayout weatherInfoLayout;
     /**
-     * 用于显示城市名
+     * 用于显示城市名 test
      */
     private TextView cityNameText;
     /**
