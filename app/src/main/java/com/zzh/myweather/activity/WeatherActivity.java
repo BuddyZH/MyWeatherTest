@@ -29,7 +29,7 @@ public class WeatherActivity extends Activity implements View.OnClickListener{
      */
     private TextView cityNameText;
     /**
-     * 用于显示发布时间
+     * 用于显示发布时间test2
      */
     private TextView publishText;
     /**
